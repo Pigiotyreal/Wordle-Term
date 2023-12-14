@@ -1,7 +1,6 @@
 words = {
     "apple",
     "banana",
-    "cherry",
     "daisy",
     "eagle",
     "fairy",
@@ -19,7 +18,6 @@ words = {
     "raven",
     "salsa",
     "tiger",
-    "umbra",
     "viper",
     "yacht",
     "zebra",
