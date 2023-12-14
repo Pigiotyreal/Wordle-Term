@@ -1,6 +1,5 @@
 words = {
     "apple",
-    "banana",
     "daisy",
     "eagle",
     "fairy",
