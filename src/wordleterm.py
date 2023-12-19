@@ -11,10 +11,12 @@ print(Fore.LIGHTMAGENTA_EX + "How to play: " + Fore.RESET + "\nGuess the five le
 
 word = random.choice(list(words))
 
-if len(sys.argv) > 1:
-    if sys.argv[1] == "--custom-list" and sys.argv[2]:
-        if os.path.isfile(sys.argv[2]):
-            with open(sys.argv[2], "r") as f:
+if "--custom-list" in sys.argv:
+    custom_list_index = sys.argv.index("--custom-list")
+    if custom_list_index + 1 < len(sys.argv):
+        custom_list_file = sys.argv[custom_list_index + 1]
+        if os.path.isfile(custom_list_file):
+            with open(custom_list_file, "r") as f:
                 wordsthing = f.read().splitlines()
                 for i in range(len(wordsthing)):
                     if len(wordsthing[i]) != 5:
@@ -28,8 +30,9 @@ if len(sys.argv) > 1:
         else:
             print(Fore.RED + "File does not exist!")
             sys.exit(1)
-    if sys.argv[1] == "--show-word" or sys.argv[3] == "--show-word":
-        print(Fore.LIGHTBLUE_EX + f"word: {word}")
+
+if "--show-word" in sys.argv:
+    print(Fore.LIGHTBLUE_EX + f"word: {word}")
 
 input("Press enter to continue...")
 print("\n" * 100)
