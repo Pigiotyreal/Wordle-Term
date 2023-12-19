@@ -44,7 +44,7 @@ python wordleterm.py --show-word
 We welcome contributions to this project. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 
 ## TODO
-- [ ] Add support for custom wordlists
+- [x] Add support for custom wordlists
 - [ ] Make the game more intuitive
 
 ## License
