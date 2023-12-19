@@ -22,6 +22,9 @@ if "--custom-list" in sys.argv:
                     if len(wordsthing[i]) != 5:
                         print(Fore.RED + "Please enter a file with words that are 5 letters long.")
                         sys.exit(1)
+                    if wordsthing[i].isalpha() == False:
+                        print(Fore.RED + "Please enter a file with words that are only letters.")
+                        sys.exit(1)
                 
                 print(Fore.LIGHTBLUE_EX + "Words:")
                 for i in range(len(wordsthing)):
