@@ -12,6 +12,7 @@ Wordle-Term is a command-line game inspired by the popular game Wordle. It allow
 2. Navigate to the project directory:
     ```shell
     cd Wordle-Term
+    cd src
     ```
 
 3. Run the game:
